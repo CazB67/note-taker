@@ -9,11 +9,13 @@ module.exports = function(app) {
     });
  
     app.post("/api/notes", function(req, res) {
-
-        req.body.id = "1";
+      if(notesData.length === 0) {
+        req.body.id = 0;
+      }else{
+        req.body.id = notesData[notesData.length - 1].id + 1;
+      }
         notesData.push(req.body)
-        console.log(req.body);
-        
+        res.json(notesData);
           try {
             fs.writeFileSync("db/db.json", JSON.stringify(notesData))
           } catch (err) {
@@ -21,12 +23,26 @@ module.exports = function(app) {
           
         }
         
-      
+        
     });
   
-   /* app.delete("/api/notes/:id", function(req, res) {
+    app.delete("/api/notes/:id", function(req, res) {
       
+      for(var i=0; i<notesData.length; i++){
+        if(req.params.id == notesData[i].id) {
+          console.log(req.params.id);
+          notesData.splice(i, 1);
+        }
       }
-    });*/
+      res.json(notesData);
+      try {
+        fs.writeFileSync("db/db.json", JSON.stringify(notesData))
+      } catch (err) {
+        console.error(err)
+      
+    }
+      
+      
+    });
   };
   
