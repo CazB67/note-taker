@@ -8,6 +8,7 @@ const app = express();
 
 // Use This to enable Static Stuff --> ie javascript and css. 
 app.use(express.static('public'))
+app.use(express.static('db'))
 
 // Sets an initial port. We"ll use this later in our listener
 const PORT = process.env.PORT || 8080;
