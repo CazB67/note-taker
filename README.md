@@ -23,10 +23,11 @@ The task was to create an application that can be used to write, save and delete
 
 ## Usage
 To use this application open the application at the following URL - 
+
 The URL of the git hub repository is https://github.com/CazB67/note-taker
 
 The following GIF shows the application's functionality.
-![Note-Taker APP](note-taker.GIF)
+![Note-Taker APP](note-taker.gif)
 
 ## Technologies
 NPM, Node js, Express js, fs module
