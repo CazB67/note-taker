@@ -28,7 +28,7 @@ The URL of the git hub repository is https://github.com/CazB67/note-taker
 
 The following GIF shows the application's functionality.
 
-![Note-Taker APP](note-taker.gif)
+<img src="note-taker.gif" width="450" height="300" title="Note-Taker APP">
 
 ## Technologies
 NPM, Node js, Express js, fs module
