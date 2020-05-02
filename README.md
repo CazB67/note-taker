@@ -2,9 +2,7 @@
 Express.js (web application server framework)
 
 ## Description 
-![GitHub issues](https://img.shields.io/github/issues/cazb67/note-taker)  
-![Last Commit](https://img.shields.io/github/last-commit/cazb67/note-taker)
-![Top Language](https://img.shields.io/github/languages/top/cazb67/note-taker)
+![GitHub issues](https://img.shields.io/github/issues/cazb67/note-taker)  ![Last Commit](https://img.shields.io/github/last-commit/cazb67/note-taker) ![Top Language](https://img.shields.io/github/languages/top/cazb67/note-taker)
 The task was to create an application that can be used to write, save and delete notes. The application needed to have an express backend and save and retrieve note data from a JSON file. A frontend for the application was given and I built the backend and connected the two.
 
 ## Table of Contents
@@ -28,6 +26,7 @@ To use this application open the application at the following URL -
 The URL of the git hub repository is https://github.com/CazB67/note-taker
 
 The following GIF shows the application's functionality.
+
 ![Note-Taker APP](note-taker.gif)
 
 ## Technologies
