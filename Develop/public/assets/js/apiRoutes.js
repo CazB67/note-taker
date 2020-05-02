@@ -4,7 +4,6 @@ const fs = require('fs')
 module.exports = function(app) {
    
     app.get("/api/notes", function(req, res) {
-     
       res.json(notesData);
     });
  
@@ -20,17 +19,12 @@ module.exports = function(app) {
             fs.writeFileSync("db/db.json", JSON.stringify(notesData))
           } catch (err) {
             console.error(err)
-          
-        }
-        
-        
+        }  
     });
   
     app.delete("/api/notes/:id", function(req, res) {
-      
       for(var i=0; i<notesData.length; i++){
         if(req.params.id == notesData[i].id) {
-          console.log(req.params.id);
           notesData.splice(i, 1);
         }
       }
@@ -39,10 +33,7 @@ module.exports = function(app) {
         fs.writeFileSync("db/db.json", JSON.stringify(notesData))
       } catch (err) {
         console.error(err)
-      
-    }
-      
-      
+      }
     });
-  };
+};
   

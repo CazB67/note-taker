@@ -3,13 +3,13 @@ Express.js (web application server framework)
 
 
 ## Description
-![GitHub repo size](https://img.shields.io/github/repo-size/cazb67/employee-summary)  
+![GitHub repo size](https://img.shields.io/github/v/release/cazb67/note-taker)  
 
 
-![GitHub issues](https://img.shields.io/github/issues/cazb67/employee-summary)  
+![GitHub issues](https://img.shields.io/github/issues/cazb67/note-taker)  
 
 
-The task was to 
+The task was to create an application that can be used to write, save and delete notes. The application needed to have an express backend and save and retrieve note data from a JSON file. A frontend for the application was given and I built the backend and connected the two.
 
 ## Table of Contents
 1. [Installation](#Installation)
@@ -23,16 +23,21 @@ The task was to
 
 
 ## Installation
-1. 
+1. Create a basic Express server
+2. Create html routes and check they are working. This took a while to sort through the directory structure. I also needed to add 
+    `app.use(express.static('public'))` and `app.use(express.static('db'))` **server.js** to link javascript and css.
+3. Create API routes - first GET was straight forward, POST and DELETE required required google fu and help with thinking it through.
+4. Testing functionality and cleaning code.
 
 ## Usage
 To use this application open the application at the following URL - 
+The URL of the git hub repositiory is https://github.com/CazB67/note-taker
 
-The following gif describes the application's functionality.
-![Generated HTML](./Assets/team.PNG)
+The following gif shows the application's functionality.
+![Note-Taker APP](./Assets/team.PNG)
 
 ## Technologies
-NPM, Node js, 
+NPM, Node js, Express
 
 ## Credits
 - Team at UWA Coding Bootcamp
