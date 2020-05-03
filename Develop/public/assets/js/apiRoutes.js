@@ -41,7 +41,9 @@ module.exports = function(app) {
     //Writing notes to db.json file
     function writingNotes() {
       try {
-        fs.writeFileSync("db/db.json", JSON.stringify(notesData))
+        
+        fs.writeFileSync("Develop/db/db.json", JSON.stringify(notesData))
+        //fs.writeFileSync("db/db.json", JSON.stringify(notesData))
       } catch (err) {
         console.error(err)
       }

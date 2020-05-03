@@ -5,8 +5,9 @@ const express = require("express");
 const app = express();
 
 // Use This to enable Static Stuff --> ie javascript and css. 
-app.use(express.static('public'));
-app.use(express.static('db'));
+app.use(express.static('Develop/public'));
+//app.use(express.static('public'));
+//app.use(express.static('Develop/public/db'));
 
 // Sets an initial port. We"ll use this later in our listener
 const PORT = process.env.PORT || 3000;
