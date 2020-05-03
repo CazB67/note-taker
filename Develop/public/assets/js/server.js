@@ -1,16 +1,15 @@
 
 // Series of npm packages that we will use to give our server useful functionality
 const express = require("express");
-
 // Tells node that we are creating an "express" server
 const app = express();
 
 // Use This to enable Static Stuff --> ie javascript and css. 
-app.use(express.static('public'))
-app.use(express.static('db'))
+app.use(express.static('public'));
+app.use(express.static('db'));
 
 // Sets an initial port. We"ll use this later in our listener
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
