@@ -22,7 +22,7 @@ The task was to create an application that can be used to write, save and delete
 4. Testing functionality and cleaning code.
 
 ## Usage
-The URL of the deployed application is - 
+The URL of the deployed application is - https://stormy-caverns-65506.herokuapp.com/
 
 The URL of the git hub repository is https://github.com/CazB67/note-taker
 
