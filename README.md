@@ -18,7 +18,7 @@ The task was to create an application that can be used to write, save and delete
 1. Create a basic Express server
 2. Create HTML routes and check they are working. It took a while to sort through the directory structure to get the links and paths to work. I also needed to add 
     `app.use(express.static('public'))` and `app.use(express.static('db'))` **server.js** to link Javascript and CSS.
-3. Create API routes - first GET was straight forward, POST and DELETE required required google fu and help with thinking it through. As the frontend was written for me, it was hard to grasp how it all works together.
+3. Create API routes - first GET was straight forward, POST and DELETE required google fu and help with thinking it through. As the frontend was written for me, it was hard to grasp how it all works together.
 4. Testing functionality and cleaning code.
 
 ## Usage
