@@ -22,11 +22,11 @@ The task was to create an application that can be used to write, save and delete
 4. Testing functionality and cleaning code.
 
 ## Usage
-To use this application open the application at the following URL - 
+The URL of the deployed application is - 
 
 The URL of the git hub repository is https://github.com/CazB67/note-taker
 
-The following GIF shows the application's functionality.
+The following GIF shows the application's functionality and how to use once you have clicked the deployed link above.
 
 <img src="note-taker.gif" width="450" height="300" title="Note-Taker APP">
 
