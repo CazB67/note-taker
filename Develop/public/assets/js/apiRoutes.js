@@ -28,7 +28,7 @@ module.exports = function(app) {
     //Deleting note if requested by client
     app.delete("/api/notes/:id", function(req, res) {
       //Iterating through notesData array if the id of the note clicked is the same as the id in the array, it is removed
-      for(var i=0; i<notesData.length; i++){
+      for(let i=0; i<notesData.length; i++){
         if(req.params.id == notesData[i].id) {
           notesData.splice(i, 1);
         }

@@ -6,8 +6,6 @@ const app = express();
 
 // Use This to enable Static Stuff --> ie javascript and css. 
 app.use(express.static('Develop/public'));
-//app.use(express.static('public'));
-//app.use(express.static('Develop/public/db'));
 
 // Sets an initial port. We"ll use this later in our listener
 const PORT = process.env.PORT || 3000;
@@ -18,8 +16,8 @@ app.use(express.json());
 
 // The routes below point our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs
-require("./apiRoutes")(app);
-require("./htmlRoutes")(app);
+require("./Develop/public/assets/js/apiRoutes")(app);
+require("./Develop/public/assets/js/htmlRoutes")(app);
 
 // Code to start server
 app.listen(PORT, function() {
